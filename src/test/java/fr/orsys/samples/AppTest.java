@@ -33,6 +33,14 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+        assertTrue( false);
+    }
+
+    /**
+     * Rigourous Test :-)
+     */
+    public void testApp1()
+    {
+        assertTrue( false);
     }
 }
