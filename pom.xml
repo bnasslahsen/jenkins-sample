@@ -16,3 +16,10 @@
     </dependency>
   </dependencies>
 </project>
+
+
+<properties>
+  <sonar.projectKey>096a6cfd32dabf7db998147be9f773d0a043f471</sonar.projectKey>
+  <sonar.organization>mcfly57na</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
