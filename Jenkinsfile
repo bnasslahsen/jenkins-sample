@@ -17,5 +17,10 @@ node () {
 			} 
  		} 
 	}
+	stage ('App-IC - Quality Analysis') {
+		withSonarQubeEnv('sonar') {
+			bat 'mvn sonar:sonar'
+		}
+	}
 }
 }
