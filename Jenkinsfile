@@ -15,7 +15,14 @@ node () {
 			} else { 
  				bat "mvn clean package " 
 			} 
- 		} 
+ 	}
+}
+
+	stage ('App-IC - Build') {
+		withSonarQubeEnv('sonar') {
+			bat 'mvn sonar:sonar'
+		}
 	}
+	
 }
 }
