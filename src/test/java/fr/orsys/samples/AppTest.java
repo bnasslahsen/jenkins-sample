@@ -52,7 +52,7 @@ public class AppTest
         assertTrue( true);
     }
     
-        public void testApp2()
+        public void testApp3()
     {
         assertTrue( true);
     }
