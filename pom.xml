@@ -8,6 +8,12 @@
   <name>SampleProject</name>
   <url>http://maven.apache.org</url>
   
+  <properties>
+  <sonar.organization>bnasslahsen</sonar.organization>
+  <sonar.projectKey>bnasslahsen_jenkins-sample</sonar.projectKey>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+ </properties>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
