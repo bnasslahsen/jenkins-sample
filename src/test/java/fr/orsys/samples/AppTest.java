@@ -45,4 +45,11 @@ public class AppTest
         assertTrue( true);
     }
     
+         /**
+     * Rigourous Test2 :-)
+     */
+    public void testApp2()
+    {
+        assertTrue( true);
+    }
 }
