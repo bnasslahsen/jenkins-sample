@@ -17,13 +17,6 @@ node () {
  				bat "mvn clean package " 
 			} 
  		}		// Maven build step
-	withMaven(maven: 'maven') { 
- 			if(isUnix()) {
- 				sh "mvn sonar:sonar " 
-			} else { 
- 				bat "mvn sonar:sonar " 
-			} 
- 		}
 		// JUnit Results
 		junit '**/target/surefire-reports/*.xml' 
 	}
