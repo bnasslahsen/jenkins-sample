@@ -8,11 +8,10 @@
   <name>SampleProject</name>
   <url>http://maven.apache.org</url>
   
-  <properties>
+<properties>
   <sonar.organization>bnasslahsen</sonar.organization>
-  <sonar.projectKey>bnasslahsen_jenkins-sample</sonar.projectKey>
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
- </properties>
+</properties>
   
   <dependencies>
     <dependency>
