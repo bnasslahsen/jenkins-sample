@@ -12,31 +12,31 @@ node () {
 
       	withMaven(maven: 'maven') { 
  			if(isUnix()) {
- 				sh "mvn clean " 
+ 				sh "mvn -B clean " 
 			} else { 
- 				bat "mvn clean " 
+ 				bat "mvn -B clean " 
 			} 
  		}		// Maven build step
 	withMaven(maven: 'maven') { 
  			if(isUnix()) {
- 				sh "mvn compile " 
+ 				sh "mvn -B compile " 
 			} else { 
- 				bat "mvn compile " 
+ 				bat "mvn -B compile " 
 			} 
  		}		// Maven build step
 	withMaven(maven: 'maven') { 
  			if(isUnix()) {
- 				sh "mvn test " 
+ 				sh "mvn -B test " 
 			} else { 
- 				bat "mvn test " 
+ 				bat "mvn -B test " 
 			} 
  		}
 		// Maven build step
 	withMaven(maven: 'maven') { 
  			if(isUnix()) {
- 				sh "mvn package -DskipTests " 
+ 				sh "mvn -B package -DskipTests " 
 			} else { 
- 				bat "mvn package -DskipTests " 
+ 				bat "mvn -B package -DskipTests " 
 			} 
  		} 
 	}
