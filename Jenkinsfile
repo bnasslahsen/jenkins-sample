@@ -9,6 +9,28 @@ node () {
 	}
 	stage ('APP-IC - Build') {
  			// Maven build step
+
+      	withMaven(maven: 'maven') { 
+ 			if(isUnix()) {
+ 				sh "mvn clean " 
+			} else { 
+ 				bat "mvn clean " 
+			} 
+ 		}		// Maven build step
+	withMaven(maven: 'maven') { 
+ 			if(isUnix()) {
+ 				sh "mvn compile " 
+			} else { 
+ 				bat "mvn compile " 
+			} 
+ 		}		// Maven build step
+	withMaven(maven: 'maven') { 
+ 			if(isUnix()) {
+ 				sh "mvn test " 
+			} else { 
+ 				bat "mvn test " 
+			} 
+ 		}
 		// Maven build step
 	withMaven(maven: 'maven') { 
  			if(isUnix()) {
