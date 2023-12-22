@@ -60,6 +60,11 @@ public class AppTest
     
     public void testApp4()
     {
+        assertTrue(false);
+    }
+
+     public void testApp5()
+    {
         assertTrue( true);
     }
 }
